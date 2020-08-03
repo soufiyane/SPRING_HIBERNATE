@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 janv. 2020 12:40:22 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="dao.Marchandise" table="MARCHANDISES">
+        <id name="numero" column="NUMERO">
+            <generator class="native" ></generator>
+        </id>
+        <property name="volume">
+        </property>
+        <property name="poids">
+        </property>
+        <property name="nom" length="25">
+        </property>
+        <many-to-one name="cargaison" column="REF_CARG">
+        </many-to-one>
+    </class>
+</hibernate-mapping>
